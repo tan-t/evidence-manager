@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>test</title>
+  </head>
+  <body>
+    <script>
+      window.jQuery = window.$ = require('./jquery-3.1.1.min.js');
+    </script>
+    <link rel="stylesheet" href="assets/components.css">
+    <div class="main-content"></div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./dependencies.js')
+    require('./dbClient.js')
+    require('./core/file-accessor.js')
+    require('./dependencies-helper.js')
+    require('./core/screen-shot.js')
+    require('./core/window-request.js')
+    require('./components/transparent-screen-shot-area.js')
+    require('./transparent-renderer.js')
+  </script>
+</html>

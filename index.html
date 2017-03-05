@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>evidence capturer</title>
+  </head>
+  <body>
+    <link rel="import" href="./components/twitter-like.html" id="twitter-like">
+    <link rel="stylesheet" href="assets/components.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="http://icono-49d6.kxcdn.com/icono.min.css">
+
+    <script>
+      window.jQuery = window.$ = require('./jquery-3.1.1.min.js');
+    </script>
+    <div class="screen-shot-area-container"></div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./dependencies.js')
+    require('./dependencies-helper.js')
+    require('./user.js')
+    require('./core/file-accessor.js')
+    require('./core/screen-shot.js')
+    require('./core/window-request.js')
+    require('./component-renderer.js')
+    require('./components/screen-shot-area.js')
+    require('./components/twitter-like.js')
+    require('./dbClient.js')
+    require('./renderer.js')
+  </script>
+</html>
